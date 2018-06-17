@@ -31,6 +31,8 @@ namespace CrossSolar.Tests.Controller
             };
 
             // Arrange
+            panel.Latitude = panel.Latitude + (panel.Latitude) * 0.6;
+            panel.Longitude = panel.Longitude + (panel.Longitude) * 0.6;
 
             // Act
             var result = await _panelController.Register(panel);
